@@ -1,0 +1,6 @@
+---
+applications:
+  - name: pvtl-standup
+    memory: 1G
+    path: target/pvtl-standup-0.0.1-SNAPSHOT.jar
+    random-route: false

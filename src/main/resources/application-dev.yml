@@ -1,0 +1,26 @@
+fbBotToken: fb_token_for_jbot
+fbGraphApi: https://graph.facebook.com/v3.2
+fbPageAccessToken: <paste your page access token>
+
+logging:
+  level:
+    io.pivotal.slack.bot: DEBUG
+    me.ramswaroop: DEBUG
+    web: DEBUG
+    org:
+      springframework:
+        web:
+          client: DEBUG
+
+
+server:
+  port: 4390
+  address: localhost
+slackApi: https://slack.com/api
+
+
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  profiles:
+    active: slack

@@ -1,0 +1,27 @@
+fbBotToken: fb_token_for_jbot
+fbGraphApi: https://graph.facebook.com/v3.2
+fbPageAccessToken: <paste your page access token>
+
+logging:
+  level:
+    io.pivotal.slack.bot: INFO
+    me.ramswaroop: INFO
+    org:
+      springframework:
+        web:
+          client: INFO
+
+
+server:
+  port: 8080
+slackApi: https://slack.com/api
+
+slackBotToken: <paste your slashbot token>
+slackIncomingWebhookUrl: <paste your incoming webhook URL>
+slashCommandToken: <paste your slash command token>
+
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  profiles:
+    active: slack
